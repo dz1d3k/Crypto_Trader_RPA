@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2494.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2299.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="26">
       <x:String>System.Activities</x:String>
@@ -69,7 +69,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="630.4,2429.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="630.4,2234.4" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
@@ -79,7 +79,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="587.2,2338.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" WorkbookPath="[string.Format(&quot;{0}\UiPath\Crypto Websites\UiPath Crypto.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="587.2,2143.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" WorkbookPath="[string.Format(&quot;{0}\UiPath\Crypto Websites\UiPath Crypto.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments))]">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
@@ -90,13 +90,13 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="575.2,2064" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="575.2,1868.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532,1972.8" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;A1:E9&quot;)]" SaveAfterEachRow="False">
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="532,1777.6" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;A1:F9&quot;)]" SaveAfterEachRow="False">
               <ueab:ExcelForEachRowX.Body>
                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                   <ActivityAction.Argument1>
@@ -110,76 +110,13 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1783.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1588" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476.8,665.6" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="452.8,588.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: CoinGecko: ceny kryptowalut i kapitalizacja rynkowa" sap:VirtualizedContainerService.HintSize="412,470.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="9cb13ba4-3b72-401c-bb4c-4b97ecb46f08" Version="V1">
-                            <uix:NApplicationCard.Body>
-                              <ActivityAction x:TypeArguments="x:Object">
-                                <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                </ActivityAction.Argument>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,248.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                                  <Sequence.Variables>
-                                    <Variable x:TypeArguments="x:String" Default="[CurrentRow.ByField(&quot;Currency short&quot;)]" Name="CoinWeb" />
-                                  </Sequence.Variables>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NGetText DisplayName="Get Text 'BTC'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="9cb13ba4-3b72-401c-bb4c-4b97ecb46f08" ScrapingOptions="None" Version="V1">
-                                    <uix:NGetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://www.coingecko.com/pl" DesignTimeRectangle="793, 508, 113, 23" ElementType="Text" FriendlyName="'48 779,61 USD'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td' tableCol='4' tag='TD' /&gt;&lt;webctrl tag='SPAN' class='no-wrap' colName=' Kurs ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TD' /&gt;&lt;webctrl tag='SPAN' class='no-wrap' colName=' Kurs ' type='' /&gt;" Guid="5d020a86-fa61-4e3c-bde4-511567268045" ImageBase64="" InformativeScreenshot="36d78753e5c9c503083299efccf2903f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CoinGecko: ceny kryptowalut i kapitalizacja rynkowa' /&gt;" SearchSteps="Selector, FuzzySelector">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                            <uix:Target DesignTimeRectangle="458, 508, 27, 24" ElementType="Text" FriendlyName="'BTC'" FullSelectorArgument="&lt;webctrl aaname=' BTC ' tag='SPAN' /&gt;" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl aaname=' {0} ' tag='SPAN' type='' check:text='{0}' /&gt;&quot;, CoinWeb)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADQSURBVEhL7ZNBDoMgEEV7lS668FjGhSdhoTcx4Sgaj2Gih/hlgKYgI2ymbdLwEhaAM08/eMMXqTIRqkyEH8o2jfbR4B6MVh92axni9fcYsdgnDEl9j2nzewZGdi6OC4ADU9dAzX7q2XWfNKd65V+WyMvYxszaPMZfeEFeRk06jd1PHamMIn7FnaNwZucIibOMj5WjEOMKZaT5GMVkBopyWP2EEI0xltlbVpDxZ5siECPh1pIbafoVrn54Qbh4rs/I/WthfSyPZR+mykT4VxnwBIv4eTsMA8JSAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
-                                    </uix:NGetText.Target>
-                                    <uix:NGetText.Text>
-                                      <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Price")]</OutArgument>
-                                    </uix:NGetText.Text>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </uix:NGetText>
-                                </Sequence>
-                              </ActivityAction>
-                            </uix:NApplicationCard.Body>
-                            <uix:NApplicationCard.TargetApp>
-                              <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ab6b3de96ae8b9055861caa4e668f23c.png" Selector="&lt;html app='chrome.exe' url='https://www.coingecko.com/pl' /&gt;" Url="https://www.coingecko.com/pl" />
-                            </uix:NApplicationCard.TargetApp>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </uix:NApplicationCard>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: https://www.coingecko.com/pl/waluty/Ethereum" sap:VirtualizedContainerService.HintSize="476.8,986.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="d7313bb6-13b5-4efa-bcb8-2657d8736dbf" Version="V1">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="CoinGecko" sap:VirtualizedContainerService.HintSize="476.8,1496.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="d7313bb6-13b5-4efa-bcb8-2657d8736dbf" Version="V1">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
@@ -190,7 +127,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="464.8,764.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="464.8,1275.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Default="[CurrentRow.ByField(&quot;Currency&quot;)]" Name="CoinWeb" />
                             </Sequence.Variables>
@@ -260,6 +197,45 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NGetText>
                             <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="421.6,84" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_1" Workbook="[Excel]" />
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Analiza techniczna dla BTC USD na Bitfinex - Investing.com" sap:VirtualizedContainerService.HintSize="421.6,470.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="cb18dd9a-fdc3-4196-879e-037bea9f28db" Version="V1">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,248.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText DisplayName="Get Recomendation" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="cb18dd9a-fdc3-4196-879e-037bea9f28db" ScrapingOptions="None" Version="V1">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://pl.investing.com/crypto/bitcoin/btc-usd-technical" DesignTimeRectangle="519, 678, 122, 22" ElementType="Text" FriendlyName="'Mocne kup'" FullSelectorArgument="&lt;webctrl parentid='techStudiesInnerWrap' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='techStudiesInnerWrap' tag='SPAN' type='' /&gt;" Guid="6c6bdcdf-8660-4965-956c-04ad4053f237" InformativeScreenshot="a30344e338cacddc32e74a0f0e98fc06.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='6oAzgsBb' title='Analiza techniczna dla BTC USD na Bitfinex - Investing.com' /&gt;" SearchSteps="Selector, FuzzySelector">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="354, 661, 813, 58" FriendlyName="'Podsumowanie:Mocne kup'" FullSelectorArgument="&lt;webctrl parentid='techStudiesInnerWrap' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='techStudiesInnerWrap' tag='DIV' type='' aaname='Podsumowanie:' check:text='Podsumowanie:Mocne kup' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                      <uix:NGetText.Text>
+                                        <OutArgument x:TypeArguments="ue:ExcelValue">[CurrentRow.ByField("Rekomendacja")]</OutArgument>
+                                      </uix:NGetText.Text>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NGetText>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFpSURBVDhPpZI9agIBEIXnAIG0ElIE0i3iCosgrD8r/qN4AdGAwRukMI0bCzuLkEIPENJkwQMIVgraeYDVQhCxtRXkhTdgyiDZgY95+3Zn9hUj1WoVQZBKpYIgSLlcRhCkVCrhWr5fH+B/3ODz5R6O46BQKEDy+TyuBV+ivD/fIhwOI5VKQbLZLPr9PqbTKaj/4u3pEbZ5h1AoBMMwkEgkIIzC2mw2Gou0Wi3U63V0Oh19dl0Xg8EAtVoNpmmi1+vpTzVBMpn8XZDL5bDb7XA4HHA+n9VfrVbwPE81lzQaDdXL5RKcFdu21Viv1ygWi6r3+70mYD+dTmi32+pPJhOMRiPV3W4XnJV4PK4GFzABaz6fgz47i3q73WqyxWKB4/GIdDqtvsRiMf3I931kMhnVHKR/WUA9HA5VM9F4PFaPiGVZ+oILuJU1m81An51Fzau7VLPZVI9INBpFECQSiSAIwosKgvCi/o+BH4TrJi9ge6UgAAAAAElFTkSuQmCC" InformativeScreenshot="f097e7584e162977b0202cec0ed5a65f.png" Selector="&lt;html app='chrome.exe' htmlwindowname='6oAzgsBb' title='Analiza techniczna dla BTC USD na Bitfinex - Investing.com'/&gt;" Url="[string.Format(&quot;&quot;&quot;https://pl.investing.com/crypto/&quot;&quot;{0}&quot;&quot;/&quot;&quot;{1}&quot;&quot;-usd-technical&quot;&quot;&quot;, CurrentRow.ByField(&quot;Currency&quot;), CurrentRow.ByField(&quot;Currency short&quot;))]" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
                           </Sequence>
                         </ActivityAction>
                       </uix:NApplicationCard.Body>
